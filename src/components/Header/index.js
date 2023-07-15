@@ -1,17 +1,19 @@
+import './styles.css'
+
 const Header = () => {
   return (
     <header>
-      <h1>Nombre de la Página</h1>
+      <h1>Mi primera app en React</h1>
       <nav>
         <ul>
           <li>
-            <a href="#">Doc React</a>
+            <a href="https://react.dev/learn">Doc React</a>
           </li>
           <li>
-            <a href="#">Github de Axel</a>
+            <a href="https://github.com/pacisauctor/react-first-steps" target="_blank" rel="noreferrer">Repo del Proyecto</a>
           </li>
           <li>
-            <a href="#">Correo</a>
+            <a href="mailto:agarciadarce@gmail.com">Correo</a>
           </li>
         </ul>
       </nav>
