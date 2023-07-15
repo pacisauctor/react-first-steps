@@ -1,23 +1,19 @@
-// FourExample.js
-
-import React, { useEffect, useState } from "react";
+import React, { useMemo, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Student from "../components/Student";
 import StudentForm from "../components/StudentForm";
 
-const FourExample = () => {
+const EExample = () => {
   const [students, setStudents] = useState([]);
+
+  const sortStudents = useMemo(() => {
+    return students.sort((a, b) => a.name.localeCompare(b.name));
+  }, [students]);
 
   const addStudent = (newStudent) => {
     setStudents([...students, newStudent]);
   };
-
-  useEffect(() => {
-    console.log(students);
-  }, [students]);
-
-
 
   return (
     <>
@@ -25,7 +21,7 @@ const FourExample = () => {
 
       <StudentForm addStudent={addStudent} />
       <section style={{ display: "flex", justifyContent: "center" }}>
-        {students.map((student, index) => (
+        {sortStudents.map((student, index) => (
           <Student
             name={student.name}
             age={student.age}
@@ -38,4 +34,4 @@ const FourExample = () => {
   );
 };
 
-export default FourExample;
+export default EExample;

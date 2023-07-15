@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Student from "../components/Student";
 
-const FirstExample = () => {
+const AExample = () => {
   return (
     <>
       <Header />
@@ -23,4 +23,4 @@ const FirstExample = () => {
   );
 };
 
-export default FirstExample;
+export default AExample;

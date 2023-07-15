@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Student from '../components/Student';
 
-const SecondExample = () => {
+const BExample = () => {
   const students = [
     {
       name: 'A',
@@ -34,4 +34,4 @@ const SecondExample = () => {
   );
 };
 
-export default SecondExample;
+export default BExample;

@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import FourExample from "./examples/FourExample";
+import FExample from "./examples/FExample";
 
 function App() {
   return (
     <>
-      <FourExample />
+      <FExample />
 
     </>
   );

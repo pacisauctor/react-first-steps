@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Student from '../components/Student';
 
-const ThirdExample = () => {
+const CExample = () => {
   const [students, setStudents] = useState([]);
   const [newStudent, setNewStudent] = useState({
     name: '',
@@ -60,4 +60,4 @@ const ThirdExample = () => {
   );
 };
 
-export default ThirdExample;
+export default CExample;
